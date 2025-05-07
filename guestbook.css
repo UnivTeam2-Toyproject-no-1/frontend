@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #e8e8ee;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+}
+
+.menubar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 310px;
+  height: 1024px;
+  background-color: #f0f0f5;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goormthonlogo2-img {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 20px;
+  image-rendering: crisp-edges;
+}
+
+.goormthonlogo-img {
+  position: absolute;
+  top: 253px;
+  left: 67px;
+  width: 175px;
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.catholiclogo-img {
+  position: absolute;
+  top: 974px;
+  left: 13px;
+  width: 284px;
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: -100px;
+}
+
+nav ul li {
+  margin: 15px 0;
+  gap: 20px;
+}
+
+nav ul li span {
+  display: inline-flex;
+  gap: 10px;
+  text-decoration: none;
+  color: #525463;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+nav ul li img {
+  width: 33.89px;
+  height: 33.89px;
+  margin-right: 10px;
+}
+
+.bannerRec {
+  position: absolute;
+  top: 0px;
+  left: 320px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafc;
+  padding: 20px;
+  width: 1120px;
+  height: 80px;
+  margin-top: 0px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner-icon {
+  position: absolute;
+  top: 24.78px;
+  left: 30px;
+  width: 33.89px;
+  height: 33.14px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 29px;
+  left: 80px;
+  width: 60px;
+  height: 24px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 2px;
+  color: #525463;
+}
+
+.comments-img {
+  width: 33.89px;
+  height: 33.14px;
+  object-fit: contain;
+}
+
+.commentRec {
+  position: absolute;
+  top: 90px;
+  left: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+  width: 1120px;
+  height: 934px;
+  border: 1px solid #000000;
+  overflow-y: auto; /* 스크롤 기능 활성화 */
+}
+
+.commentRec::-webkit-scrollbar {
+  width: 12px;
+}
+
+.commentRec::-webkit-scrollbar-track {
+  background-color: #f0f0f5;
+}
+
+.chat-header {
+  background-color: #f3f4f6;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 20px;
+  flex: 1;
+  overflow-x: hidden;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.message {
+  /* 닉네임 + 내용 상자 */
+  position: relative;
+  background-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #dadfe3;
+  width: 1031px;
+  height: 132px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logoMini-icon {
+  width: 55px;
+  height: 55px;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
+.sender {
+  position: absolute;
+  font-size: 23px;
+  font-weight: normal;
+  position: absolute;
+  top: 18px;
+  left: 78px;
+  margin-left: 8px;
+}
+
+.date {
+  position: absolute;
+  font-size: 18px;
+  font-weight: normal;
+  color: #888;
+  top: 48px;
+  left: 78px;
+  margin-left: 8px;
+}
+
+.text {
+  margin-top: 5px;
+  margin-left: 8px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.inputFrame {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 71px;
+  background-color: #f0f0f5;
+  border: 1px solid #dadfe3;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+}
+
+.commentFrame {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 1031px;
+  height: 71px;
+  background-color: #f0f0f5;
+  border: 1px solid #dadfe3;
+  border-radius: 15px;
+
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.nameInput input {
+  width: 194px;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #e8e8ee;
+  padding: 10px;
+}
+
+.nameInput ::placeholder {
+  font-size: 14px;
+  font-weight: normal;
+  height: 24px;
+  padding: 0 12px;
+  line-height: 24px;
+}
+
+.commentInput {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.commentInput input {
+  flex: 1;
+  width: 813px;
+  height: 55px;
+  border-radius: 10px;
+  border: 1px solid #e8e8ee;
+  padding: 0 10px;
+  margin-right: -10px;
+}
+
+.commentInput button {
+  position: absolute;
+  top: 7.5px;
+  right: 0px;
+  width: 95px;
+  height: 40px;
+  background-color: #2b2d36;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.commentInput button:hover {
+  background-color: #444;
+}
